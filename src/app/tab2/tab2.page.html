@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cars
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Audi <3</ion-label>
+      <ion-checkbox [(ngModel)]="audi" value="audi" (ionChange)="selectCar(audi, 'Audi')"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dacia</ion-label>
+      <ion-checkbox [(ngModel)]="dacia" (ionChange)="selectCar(dacia, 'Dacia')"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mercedes</ion-label>
+      <ion-checkbox [(ngModel)]="mercedes" (ionChange)="selectCar(mercedes, 'Mercedes')"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Land Rover</ion-label>
+      <ion-checkbox [(ngModel)]="landRover" (ionChange)="selectCar(landRover, 'Land Rover')"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ferrari</ion-label>
+      <ion-checkbox [(ngModel)]="ferrari" (ionChange)="selectCar(ferrari, 'Ferrari')"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tesla</ion-label>
+      <ion-checkbox [(ngModel)]="tesla" (ionChange)="selectCar(tesla, 'Tesla')"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <span>
+      <ion-icon name="car"></ion-icon> {{ text }}
+  </span>
+               
+</ion-content>
